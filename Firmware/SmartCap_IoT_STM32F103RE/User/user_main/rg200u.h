@@ -24,8 +24,8 @@ extern "C" {
 #define RG200U_DEBUG_ENABLE     0    /* 1=显示调试信息, 0=隐藏调试信息 */
 
 /* TCP服务器配置 */
-#define TCP_SERVER_IP    "2401:ce00:c5af:75d0::f8a"              /* 服务器IPv4地址 */
-#define TCP_SERVER_PORT  "18655"                     /* 服务器端口 */
+#define TCP_SERVER_IP    "8.135.10.183"              /* 服务器IPv4地址 */
+#define TCP_SERVER_PORT  "35814"                     /* 服务器端口 */
 #define TCP_SOCKET_ID    0                           /* Socket ID */
 
 /* Exported types ------------------------------------------------------------*/

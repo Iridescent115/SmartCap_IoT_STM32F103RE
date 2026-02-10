@@ -249,7 +249,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69855F1A)
 I (../Core/Inc/stm32f1xx_it.h)(0x69855F12)
-I (../User/user_main/rg200u.h)(0x6989A255)
+I (../User/user_main/rg200u.h)(0x698AEB9B)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 I (../User/user_main/rs485.h)(0x6985969B)
 F (../Core/Src/stm32f1xx_hal_msp.c)(0x69855F12)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/user_main -I ../User/wiz_interface -I ../User/wiz_platform -I ../User/ioLibrary_Driver/Ethernet -I ../User/ioLibrary_Driver/Ethernet/W5500 -I ../User/ioLibrary_Driver/Internet/DHCP -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3-I.\RTE\_SmartCap_IoT_STM32F103RE-I"D:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o smartcap_iot_stm32f103re\stm32f1xx_hal_msp.o --omf_browse smartcap_iot_stm32f103re\stm32f1xx_hal_msp.crf --depend smartcap_iot_stm32f103re\stm32f1xx_hal_msp.d)
@@ -978,7 +978,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69855F1A)
 I (..\User\user_main\rs485.h)(0x6985969B)
-I (..\User\user_main\rg200u.h)(0x6989A255)
+I (..\User\user_main\rg200u.h)(0x698AEB9B)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 F (..\User\user_main\user_main.h)(0x69858A59)()
 F (..\User\user_main\rs485.c)(0x69859692)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/user_main -I ../User/wiz_interface -I ../User/wiz_platform -I ../User/ioLibrary_Driver/Ethernet -I ../User/ioLibrary_Driver/Ethernet/W5500 -I ../User/ioLibrary_Driver/Internet/DHCP -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3-I.\RTE\_SmartCap_IoT_STM32F103RE-I"D:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o smartcap_iot_stm32f103re\rs485.o --omf_browse smartcap_iot_stm32f103re\rs485.crf --depend smartcap_iot_stm32f103re\rs485.d)
@@ -1091,8 +1091,8 @@ I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 F (..\User\wiz_interface\wiz_interface.h)(0x6982EC41)()
-F (..\User\user_main\rg200u.c)(0x69899D85)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/user_main -I ../User/wiz_interface -I ../User/wiz_platform -I ../User/ioLibrary_Driver/Ethernet -I ../User/ioLibrary_Driver/Ethernet/W5500 -I ../User/ioLibrary_Driver/Internet/DHCP -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3-I.\RTE\_SmartCap_IoT_STM32F103RE-I"D:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o smartcap_iot_stm32f103re\rg200u.o --omf_browse smartcap_iot_stm32f103re\rg200u.crf --depend smartcap_iot_stm32f103re\rg200u.d)
-I (..\User\user_main\rg200u.h)(0x6989A255)
+F (..\User\user_main\rg200u.c)(0x698AEF1E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/user_main -I ../User/wiz_interface -I ../User/wiz_platform -I ../User/ioLibrary_Driver/Ethernet -I ../User/ioLibrary_Driver/Ethernet/W5500 -I ../User/ioLibrary_Driver/Internet/DHCP -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3-I.\RTE\_SmartCap_IoT_STM32F103RE-I"D:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o smartcap_iot_stm32f103re\rg200u.o --omf_browse smartcap_iot_stm32f103re\rg200u.crf --depend smartcap_iot_stm32f103re\rg200u.d)
+I (..\User\user_main\rg200u.h)(0x698AEB9B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69855F1A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69855F12)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69855F1A)
@@ -1127,7 +1127,7 @@ I (../Core/Inc/main.h)(0x69855F12)
 I (../Core/Inc/usart.h)(0x69855F12)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-F (..\User\user_main\rg200u.h)(0x6989A255)()
+F (..\User\user_main\rg200u.h)(0x698AEB9B)()
 F (..\User\user_main\user_tasks.c)(0x6985A107)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/user_main -I ../User/wiz_interface -I ../User/wiz_platform -I ../User/ioLibrary_Driver/Ethernet -I ../User/ioLibrary_Driver/Ethernet/W5500 -I ../User/ioLibrary_Driver/Internet/DHCP -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3-I.\RTE\_SmartCap_IoT_STM32F103RE-I"D:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o smartcap_iot_stm32f103re\user_tasks.o --omf_browse smartcap_iot_stm32f103re\user_tasks.crf --depend smartcap_iot_stm32f103re\user_tasks.d)
 I (..\User\user_main\user_tasks.h)(0x6985823E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x69855F1C)
@@ -1175,6 +1175,6 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69855F1A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69855F1A)
 I (..\User\user_main\rs485.h)(0x6985969B)
-I (..\User\user_main\rg200u.h)(0x6989A255)
+I (..\User\user_main\rg200u.h)(0x698AEB9B)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 F (..\User\user_main\user_tasks.h)(0x6985823E)()

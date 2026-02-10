@@ -500,6 +500,9 @@ uint8_t RG200U_ConnectTCPServer(void)
     /* 清空接收缓冲 */
     rx_read_index = rx_write_index;
     
+    /* 关闭可能存在的旧TCP连接（静默执行，不打印日志） */
+    RG200U_SendATCommand("AT+QICLOSE=0\r\n", response, 2000);
+
     /* 配置URC输出到所有端口(连接前确保配置生效) */
     RG200U_SendATCommand("AT+QURCCFG=\"urcport\",\"all\"\r\n", response, 2000);
     
