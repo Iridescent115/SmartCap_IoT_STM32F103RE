@@ -1,0 +1,20 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
+Build target 'SmartCap_IoT_STM32F103RE'
+compiling wiz_interface.c...
+..\User\wiz_interface\wiz_interface.c(164): warning:  #870-D: invalid multibyte character sequence
+      printf("当前双工模式 : %s\r\n", get_phy_conf & 0x04 ? "全双�?" : "半双�?");
+..\User\wiz_interface\wiz_interface.c(164): error:  #53: expected a ":"
+      printf("当前双工模式 : %s\r\n", get_phy_conf & 0x04 ? "全双�?" : "半双�?");
+..\User\wiz_interface\wiz_interface.c(164): error:  #7: unrecognized token
+      printf("当前双工模式 : %s\r\n", get_phy_conf & 0x04 ? "全双�?" : "半双�?");
+..\User\wiz_interface\wiz_interface.c(164): error:  #8: missing closing quote
+      printf("当前双工模式 : %s\r\n", get_phy_conf & 0x04 ? "全双�?" : "半双�?");
+..\User\wiz_interface\wiz_interface.c(165): error:  #18: expected a ")"
+  }
+..\User\wiz_interface\wiz_interface.c(165): error:  #65: expected a ";"
+  }
+..\User\wiz_interface\wiz_interface.c: 1 warning, 5 errors
+compiling wiz_platform.c...
+"SmartCap_IoT_STM32F103RE\SmartCap_IoT_STM32F103RE.axf" - 5 Error(s), 1 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

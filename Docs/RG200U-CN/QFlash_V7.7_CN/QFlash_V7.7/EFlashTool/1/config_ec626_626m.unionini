@@ -1,0 +1,83 @@
+[config]
+line_0_com = COM9
+agbaud=921600
+
+filter_embedusb=1
+filter_externcom=0
+filter_explicitcom0 = 19D1
+filter_explicitcom1 = 1366
+;agentboot.bin file infomation
+[agentboot]
+tool_basedir = 1
+agpath =.\image_ec626\agentboot.bin
+
+[storage_cfg]
+opt_storage_list=""
+format_path=format_ec626.json
+
+;bootloader.bin file infomation
+[bootloader]
+blpath = .\image_ec626\bootloader.bin
+
+blloadskip = 0
+
+;system.bin file infomation
+[system]
+syspath =.\image_ec626\ap_demo-flash.bin
+sysloadskip = 0
+burnaddr = 0x1f000
+
+;control such as reset before download
+[control]
+detect = 2
+atbaud=115200
+
+prempt_detect_time = 6
+msg_waittime = 2
+max_preamble_cnt = 8
+lpc_recover_en = 0
+;cfg reset to 2, skip reset pin
+pullup_qspi =1
+;remap_dld_addr = 32768
+rom_version=0000000104000000
+;send and receive
+
+
+[flexfile0]
+filepath = .\rfCaliTb_ec626\MergeRfTable_flx0_chocie_0.bin
+burnaddr = 0x1dc000
+storage_type=ap_flash
+
+
+;add support for choice flexfile by chipid
+;(CHIP ID0)
+choose_path_by_chipid=1
+filepath1 = .\rfCaliTb_ec626\MergeRfTable_flx0_chocie_1.bin
+select_chipid_mode=file_chipid_by_ordered_index
+;(CHIP ID0)
+index0_chipid=a0efe8ee
+index0_compseq=0x0:36
+
+;(CHIP ID1)
+index1_chipid=b08690f0
+index1_compseq=0x0:37
+flxchoc_allow_getattr_dbg=1
+
+[flexfile1]
+filepath = .\rfCaliTb_ec626\MergeRfTable_flx1_chocie_0.bin
+burnaddr = 0x15000
+storage_type=ap_flash
+
+;add support for choice flexfile by chipid
+choose_path_by_chipid=1
+filepath1 = .\rfCaliTb_ec626\MergeRfTable_flx1_chocie_1.bin
+
+select_chipid_mode=file_chipid_by_ordered_index
+;(CHIP ID0)
+index0_chipid=a0efe8ee
+index0_compseq=0x0:36
+
+;(CHIP ID1)
+index1_chipid=b08690f0
+index1_compseq=0x0:37
+flxchoc_allow_getattr_dbg=1

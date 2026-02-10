@@ -1,0 +1,23 @@
+{
+    "product_sets":
+    [
+        	{
+        	        	"prod_name":"XPK_EC718S_PRD",
+        	        	"file_basedir_keys":"base_uart_config_file;base_usb_config_file;format_path",
+
+        	        	"base_uart_config_file":"./config_xpk_ec718s_prd_uart.baseini.bin",
+        	        	"base_usb_config_file":"./config_xpk_ec718s_prd_usb.baseini.bin",
+        	        	"specific_info":{
+        	        	"format_path":"./xpk_ec718s_format.json.bin",
+        	        	"ap_flash_spec_images":"cp_system"
+        	        	},
+        	        	"storage_info":[
+        	        	{
+        	        	"NAME":"AP",
+        	        	"BASE_LNA":"0x800000",
+        	        	"BASE_SIZE":"0x200000"
+        	        	}
+        	        	]
+        	}
+    ]
+}

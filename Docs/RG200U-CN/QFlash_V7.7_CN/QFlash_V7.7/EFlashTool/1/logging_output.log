@@ -1,0 +1,55 @@
+2025-10-20 11:12:27,593 DEBUG    [FlashTop]    lib svn rev: LIB_SVN_REVISION:  00000681,build time-2025-09-03 10:53:56
+2025-10-20 11:12:27,594 INFO     [FlashTop]    init
+2025-10-20 11:12:27,600 INFO     [FlashToolCLI]    
+[Error Info]:[help command]
+2025-10-23 15:19:34,668 DEBUG    [FlashTop]    lib svn rev: LIB_SVN_REVISION:  00000681,build time-2025-09-03 10:53:56
+2025-10-23 15:19:34,670 INFO     [FlashTop]    init
+2025-10-23 15:19:34,696 INFO     [FlashTop]    PreLoad para sync success
+2025-10-23 15:19:34,696 [Process-30848] INFO     [FlashTop]    do_main: cmd loadpara
+2025-10-23 15:19:34,696 [Process-30848] INFO     [FlashTop]    loadpara args 0x3c49930 
+2025-10-23 15:19:34,696 [Process-30848] INFO     [FlashTop]     TestAndSetP2ILdStat Entry
+2025-10-23 15:19:34,768 [Process-30848] INFO     [PRFrame]    LoadPrMgrProc init loaded E:\1_Source\QFlash_Tool\QFlash\QFlash_V7.6\EFlashTool\1\PRMgrCfg.json
+2025-10-23 15:19:34,769 [Process-30848] INFO     [Para]    LoadPara LoadPrMgrCfg PRMgrCfg.json success
+2025-10-23 15:19:34,787 [Process-30848] INFO     [Para]    LoadPara from cfgfile(E:\1_Source\QFlash_Tool\QFlash\QFlash_V7.6\EFlashTool\1\config.ini) 
+2025-10-23 15:19:34,789 [Process-30848] INFO     [PRFrame]    LdXPKPrMgrProc update start, loadstat 0, path chg 1, digest chg 0
+2025-10-23 15:19:34,789 [Process-30848] INFO     [PRFrame]    LdXPKPrMgrProc  not exist
+2025-10-23 15:19:34,793 [Process-30848] ERROR    [Para]    invalid config, filepath:, burnaddr 0xce000
+2025-10-23 15:19:34,794 [Process-30848] ERROR    [Para]    invalid config, filepath:, burnaddr 0xe7000
+2025-10-23 15:19:34,794 [Process-30848] INFO     [Para]    LoadPkgFlx
+2025-10-23 15:19:34,800 [Process-30848] INFO     [FlashTop]    Load para sync success
+2025-10-23 15:19:34,800 [Process-30848] INFO     [FlashTop]    LoadParaToArgs id args 0x3c49930, opt_storage_list 0x3c657f0 "cp_flash"
+2025-10-23 15:19:34,801 [Process-30848] INFO     [FlashTop]    InitLoadImgInfo add empty bootloader2
+2025-10-23 15:19:34,805 [Process-30848] INFO     [FlashTop]    do_main: cmd pkg2img
+2025-10-23 15:19:34,816 [Process-30848] INFO     [PkgRgCtl]    Step1, SetPrSelGenSuc
+2025-10-23 15:19:34,816 [Process-30848] INFO     [FlashToolCLI]    do_pkg2img ChkPrSelGenCfgMasked 1, PrSelLoad skip.
+2025-10-23 15:19:34,816 [Process-30848] INFO     [PkgRgCtl]    Step2, SetPrSelLoadSuc
+2025-10-23 15:19:34,817 [Process-30848] INFO     [FlashTop]    do_main: cmd pkg2img
+2025-10-23 15:19:34,829 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadPrimInfo finish
+2025-10-23 15:19:34,830 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadToolVerInfo tool version 106
+2025-10-23 15:19:34,833 [Process-30848] WARNING  [PkgVerCtrl]    PkgLoadCargInfo not exist, default sync draw mode
+2025-10-23 15:19:34,833 [Process-30848] INFO     [PkgVerCtrl]    PkgChkRuleOldOrNew tool ver 106, old format pkg
+2025-10-23 15:19:34,834 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadExtSyncRec finish
+2025-10-23 15:19:34,870 [Process-30848] INFO     [PkgVerCtrl]    PkgPreExtNeeded skip, not needed
+2025-10-23 15:19:34,870 [Process-30848] INFO     [PkgRgCtl]    Step3, SetPreExtSuc
+2025-10-23 15:19:34,870 [Process-30848] INFO     [PkgVerCtrl]    PkgPreExtract Default SyncDrawMode
+2025-10-23 15:19:34,870 [Process-30848] INFO     [FlashTop]    do_main: cmd pkg2img
+2025-10-23 15:19:34,881 [Process-30848] INFO     [PkgVerCtrl]    Pkg2Img no carg cfg, default sync draw mode.
+2025-10-23 15:19:34,881 [Process-30848] INFO     [PkgVerCtrl]    PkgChkRuleOldOrNew tool ver 106, old format pkg
+2025-10-23 15:19:34,929 [Process-30848] WARNING  [PkgVerCtrl]    PkgChkTgtBinsDrMd burnsize for bootloader no check
+2025-10-23 15:19:34,930 [Process-30848] ERROR    [PkgVerCtrl]    PkgChkOneTgtBin fail E:\1_Source\QFlash_Tool\QFlash\QFlash_V7.6\EFlashTool\1\image_ec618\ap_bootloader.bin not exist
+2025-10-23 15:19:34,930 [Process-30848] ERROR    [PkgVerCtrl]    PkgImgTgtDrMdChk->ChkTargetBins fail 0x00001001
+2025-10-23 15:19:34,930 [Process-30848] INFO     [PkgVerCtrl]    PkgDrMdPostExtNeeded True
+2025-10-23 15:19:35,050 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadPrimInfo finish
+2025-10-23 15:19:35,060 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadToolVerInfo tool version 106
+2025-10-23 15:19:35,060 [Process-30848] WARNING  [PkgVerCtrl]    PkgLoadCargInfo not exist, default sync draw mode
+2025-10-23 15:19:35,060 [Process-30848] INFO     [PkgVerCtrl]    PkgChkRuleOldOrNew tool ver 106, old format pkg
+2025-10-23 15:19:35,060 [Process-30848] INFO     [PkgVerCtrl]    PkgLoadExtSyncRec finish
+2025-10-23 15:19:35,142 [Process-30848] WARNING  [PkgVerCtrl]    PkgChkTgtBinsDrMd burnsize for bootloader no check
+2025-10-23 15:19:35,189 [Process-30848] INFO     [PkgVerCtrl]    PkgImgTgtDrMdChk finish
+2025-10-23 15:19:35,238 [Process-30848] INFO     [PkgVerCtrl]    PkgPostExtDrawMode finish
+2025-10-23 15:19:35,238 [Process-30848] INFO     [PkgRgCtl]    Step4, SetPostExtSuc
+2025-10-23 15:19:35,239 [Process-30848] INFO     [FlashTop]    pkg2img success
+2025-12-02 13:37:10,078 DEBUG    [FlashTop]    lib svn rev: LIB_SVN_REVISION:  00000681,build time-2025-09-03 10:53:56
+2025-12-02 13:37:10,079 INFO     [FlashTop]    init
+2025-12-02 13:37:10,086 INFO     [FlashToolCLI]    
+[Error Info]:[help command]

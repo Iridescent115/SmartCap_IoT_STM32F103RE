@@ -1,0 +1,20 @@
+2023-06-14 10:37:21
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp\ap_bootloader.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.4_20230614\pkgimg_gen\ec718sef_prd_images\ap_bootloader.bin
+2023-06-14 10:37:21
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp\ap_at_command.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.4_20230614\pkgimg_gen\ec718sef_prd_images\ap_at_command.bin
+2023-06-14 10:37:21
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp\cp-demo-flash.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.4_20230614\pkgimg_gen\ec718sef_prd_images\cp-demo-flash.bin
+2023-06-14 10:37:21
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\MultiDownload\Multiownload_SinglePackage\fcelf_tool_pkg_ec718s_2m_ef\fcelf_tool_pkg_ec718s_2m\pkg_extract_tmp\pkgflxfile_1.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.4_20230614\pkgimg_gen\ec718sef_prd_images\pkgflxfile_1.bin

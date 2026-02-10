@@ -1,0 +1,15 @@
+2023-06-12 13:38:35
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp\ap_bootloader.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\pkgimg_gen\ec718u_prd_images\ap_bootloader.bin
+2023-06-12 13:38:35
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp\ap_at_command.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\pkgimg_gen\ec718u_prd_images\ap_at_command.bin
+2023-06-12 13:38:35
+ImageInfo:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\imagedata.json
+ExtractDir:C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp
+SYNC SRC: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\image_ec718\named_product\ec718u\pkgdir\pkg_extract_tmp\cp-demo-flash.bin
+SYNC TGT: C:\Users\ivan\Documents\projects\ec616_00\release_ec616_01\FlashToolsRelease\FlashTools_V4.0.10\FlashTools_V4.1.3_20230606\pkgimg_gen\ec718u_prd_images\cp-demo-flash.bin

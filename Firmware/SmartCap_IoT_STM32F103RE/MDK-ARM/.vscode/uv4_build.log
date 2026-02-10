@@ -1,0 +1,17 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
+Build target 'SmartCap_IoT_STM32F103RE'
+compiling user_main.c...
+..\User\user_main\user_main.c(225): warning:  #223-D: function "wiz_tim_irq_enable" declared implicitly
+      wiz_tim_irq_enable();
+..\User\user_main\user_main.c(228): warning:  #223-D: function "wizchip_spi_cb_reg" declared implicitly
+      wizchip_spi_cb_reg();
+..\User\user_main\user_main.c(231): warning:  #223-D: function "wizchip_reset" declared implicitly
+      wizchip_reset();
+..\User\user_main\user_main.c(167): warning:  #177-D: function "Status_K1_Flash"  was declared but never referenced
+  static void Status_K1_Flash(uint32_t times, uint32_t interval)
+..\User\user_main\user_main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=14030 RO-data=370 RW-data=196 ZI-data=3860  
+FromELF: creating hex file...
+"SmartCap_IoT_STM32F103RE\SmartCap_IoT_STM32F103RE.axf" - 0 Error(s), 4 Warning(s).
+Build Time Elapsed:  00:00:01

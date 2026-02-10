@@ -1,0 +1,255 @@
+程序名称：FlashToolCLI
+程序版本：FlashToolCLI V4.1.19
+V4.1.19
+20250429
+1.增加了脚本方式运行烧录
+runscript参数说明--
+			runscript参数1 step说明：
+			指定执行launch_script参数指定的脚本文件，一般用于首次运行时并生成目标product_name烧录脚本文件（由参数target_prod_op_script指定文件名）
+			或者指定operate 指定运行生成得烧录脚本文件（由参数target_prod_op_script指定文件名，common_script_launch_once.txt），一般用于执行烧录。
+			
+			runscript参数2 scriptdir说明：
+			allprods_op_src_script，target_prod_op_script指定得文件如果时相对路径，指定在这个目录中寻找，默认为product_scripts目录
+			
+			runscript参数3 launch_script：		
+			当step指定为luanch时有效，解析这个文件（默认文件为common_script_launch_once.txt）中的命令，这个文件一般包含pkg2img指令和genscript指令，完成pkg2img解压，提取product_name，
+			并执行genscript 以product_name为索引在allprods_op_src_script参数文件查找对应产品得烧录脚本，拷贝这些内容生成target_prod_op_script文件（默认为target_product_script_operate_tmp.txt）。
+
+			runscript参数4 allprods_op_src_script：	
+			按照特殊约定的格式定义的脚本文件，包含所有产品对应的烧录步骤，如probe， chkpkgimg, burnbatch等指令，完成整个烧录过程。
+			
+			runscript参数5 target_prod_op_script：	
+			由luanch步骤生成的文件，默认为target_product_script_operate_tmp.txt，包含对应binpkg对应的烧录指令
+			在operate 阶段，执行这个参数（默认为target_product_script_operate_tmp.txt），用于完成烧录。
+
+			
+
+runscript烧录示例：
+1执行在ini文件中配置好要烧录的binpkg文件，首次运行时执行一次FlashToolCLI.exe --port COM18 --cfgfile config_pkg_product_usb.ini runscript launch
+
+2对目标板进行烧录
+FlashToolCLI.exe --port COM18 --cfgfile config_pkg_product_usb.ini runscript opearte
+
+脚本文件格式说明
+除了空行,包含以下几种格式的行
+注释行@#cli_script_comment->开始，@结束
+起始行@cli_script_start:开始，@结束，起始行中product_name=XXX用于指定产品名，指示该段内容的脚本用于对应的产品
+命令行@cli_cmd_one:开始，@结束，launch阶段用于指定pkg2img，genscript指令， operate姐u按用指定probe,chkpkgimg, flasherae,burnbatch等指令
+结束行@cli_script_end:开始，@结束，结束行中product_name=XXX用于指定产品名，指示该段内容的脚本用于对应的产品，必须与开始行相同
+若
+
+若默认文件为common_script_launch_once.txt内容
+@#cli_script_comment->######################## start ############################@
+@cli_script_start:product_name=launch_any@
+@#cli_script_comment->@
+@cli_cmd_one:pkg2img@
+@cli_cmd_one:genscript --callfr_runscript=yes@
+@cli_script_end:product_name=launch_any@
+@#cli_script_comment->$$$$$$$$$$$$$$$$$$$$$$$$$$  end $$$$$$$$$$$$$$$$$$$$$$$$$$@
+
+V4.1.18
+20250423
+1.更新了718M2 agentboot, 在初始化阶段，如果HW TRIM 没有调用，并且FUSE MIRROR也没有加载，
+在SBOOT使能的情况下，尝试HW TRIM.
+
+20250319
+重新编译，更新了一些测试代码。
+
+V4.1.17
+20250312
+1.更新了EC626 agentboot文件，支持CHIP读取。
+       增加统一626,626m的配置文件，该配置文件同一个flexfile可以配置多个（flexfile_x，CHIPID_x，文件校验pattern_x)参数对，
+工具下载前通过CHIPID读取，识别626或者626M芯片，选择对应的参数对，进而选择对应的626/626M校准文件；
+还可文件校验pattern，对下载前的文件进行格式校验，防止误烧。
+参考配置文件示例：config_ec626_626m.unionini
+
+;choose_path_by_chipid=1，打开对支持可选的校准文件和CHIP ID参数对配置
+choose_path_by_chipid=1
+;filepath1 的路径配置，作为可选的文件，根据工具读取到的CHIPID来选择filepath 或者filepath1
+filepath1 = .\rfCaliTb_ec626\MergeRfTable_flx0_chocie_1.bin
+
+;select_chipid_mode=file_chipid_by_ordered_index, 选择按索引顺序匹配CHIPID,比如filepath配对index0_chipid的值， filepath1配对index1_chipid的值
+select_chipid_mode=file_chipid_by_ordered_index
+
+;参数对0，对应的CHIPID_0的值，
+index0_chipid=a0efe8ee
+;参数对0，文件校验pattern_0，0x0被校验文件的偏移地址,36为被校验文件对应位置0的hex值
+index0_compseq=0x0:36
+
+;参数对1，对应的CHIPID_1的值
+index1_chipid=b08690f0
+;参数对1，文件校验pattern_1，0x0被校验文件的偏移地址,37为被校验文件对应位置0的hex值
+index1_compseq=0x0:37
+
+
+2.更新了716S uart/usb agentboot，
+2.1 支持外部FLASH 3.3V需要以下两个文件中增加配置
+config_ec716s_prd_uart.baseini
+config_ec716s_prd_usb.baseini
+[control]
+pr_runtime_ctrl_en = 1
+chip_ctl_para_en = 0
+board_ctl_para_en = 1
+io_vol_18_or_33 = 1
+
+2.2 增加了XMC FLASH 特殊ID的支持，用于识别该款FLASH，并读取UUID.
+增加了外部FLASH支持
+
+
+3.更新了718M2 uart/usb agentboot,有条件的配置相关TRIM，提高烧录成功率和FUSE读取次数
+3.1 擦写失败的时候，配置相关TRIM，提高烧录成功率
+3.2 在JEDEC ID读取失败的时候，配置相关TRIM
+3.3 以及在FLASH读取操作时，配置相关TRIM
+
+4.prmgrcfg.json中增加了 716S/716E 外部FLASH存储
+
+5.增加了 626E的支持
+增加文件config_ec626e.ini，format_ec626e.json
+
+V4.1.16
+20241202
+1.支持使用burnbatch烧录通过指定bindtype类型来烧录对应的PKGFLX，如PKGFLXLFS
+如测试下载包at_command_test.binpkg，包内已打包包含 PKGFLXLFS类型的镜像，
+1）在config_pkg_product_usb.ini 中配置 arg_pkg_path_val=at_command_test.binpkg
+2）运行pkg2img解压包，在解压后的config_pkg_product_usb.ini 可以看到bindtype=PKGFLXLFS这个配置项，
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 pkg2img
+3）运行连接，和下载烧录bindtype为pkgflxlfs的镜像， 需运行burnbatch时加如参数--spec_pkgflx_method=1
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 probe
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 --skipconnect 1 --imglist pkgflxlfs --spec_pkgflx_method=1
+
+V4.1.15
+20241122
+1.修改了代码参数，解决读flash失败的问题。
+2.更新了718PM FLASHLAYOUT, bootloader扩大了16KB， Default rr后挪。
+
+V4.1.14
+20241112
+1.更新了usb/uart agentboot 增加了外部flash的擦除,USB口外部flash擦除测试示例如下：
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 probe
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 --skipconnect 1 --verbose 1 flasherase 0x0 0x400000 --stor_type external
+
+2.支持flexfile外部FLASH配置0地址也可以烧录（串口烧录类似，此处略）。
+以718P USB端口烧录为例，如下配置product_sets\ec718_products\ec718p\base_config_files\config_ec718p_prd_usb.baseini
+[flexfile3]
+filepath = .\test_ef.bin
+burnaddr = 0x0
+storage_type=EF
+usb端口烧录命令如：
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 probe
+FlashToolCLI.exe --cfgfile config_pkg_product_usb.ini --port COM39 --skipconnect 1 --verbose 1 burnone flexfile3
+
+
+V4.1.13
+20241107
+1增加了718um配置，增加了718hm配置
+
+
+V4.1.13
+20241106
+1增加了718pm/718sm的配置。
+2调整了718pm/sm的at复位延迟时间600->650ms
+
+V4.1.13
+20241028
+
+1.更新了718 agentboot，优化了 下载外部flash下载速度，及usb内部flash下载对齐擦除。
+2.同步了runtmcfg,外部flash3.3VIO可配置。
+打开runtimecfg
+[control]pr_runtime_ctrl_en=1
+打开board参数配置
+[control]board_ctl_para_en = 1
+配置IO 3.3V，适用于 3.3V供电的外部FLASH
+[control]io_vol_18_or_33 = 1
+
+3.更新了外部flash频率参数可配，ext_flash_freq_seq = 0/1 分别为13M/26M
+baseini配置如下为外部flash工作时钟26M
+[control]pr_runtime_ctrl_en=1
+打开board参数配置
+[control]board_ctl_para_en = 1
+配置外部FLASH 时钟13M*2
+[control]ext_flash_freq_seq = 1
+
+4.修复了618 SEC XBINPKG打包时，bootloader2支持的时候，bootloader2 head文件中地址校验错误
+5.更新了618 agentboot，支持bootld2烧录
+6.更新了718U layout
+7.更新了716 agentboot固件，716S/716E FLASH大小校验，uuid等。
+[control]
+pr_runtime_ctrl_en = 1
+chip_ctl_para_en = 1
+verify_flash_size_need = 1
+
+
+V4.1.12
+20240823
+1.增加了bootld2配置支持。
+2.同步了V4.0.X security 相关功能。
+3.增加了程序外部FLASH读取，读取时指定。
+4.增加了程序 FLASH UUID 读取，读取指令为flash_uuid_rd
+5.更新了718 相关的agentboot uart/usb,支持FLASH UUID读取，外部FLASH读取.
+
+V4.1.11p02
+20240511
+1.更新了EC626 format_ec626.json 烧录校准区域时擦除区域40KB改为32KB，不擦除8KB IMEI区域。
+
+V4.1.11p01
+20240401
+1.增加支持716e配置。
+2.更新了718 usb/uart agentboot固件,支持718U 8MFLASH
+3.更新了718U 8MFLASH flashlayout
+4.更新了EC626 flashlayout LFS/RR区域位置互换,config_e626.ini format json。
+
+
+V4.1.11
+20240123
+1.增加了718/716说明，增加了named product说明。
+
+V4.1.10
+20240119
+1.增加了版本信息。
+2.更新uart/usb agentboot.bin，在初始化flash时对flash软复位，避免因为flash未退出continuous模式，导致下载break报错。
+
+
+V4.1.9
+20231124
+1.增加了配置路径和版本包路径的中文检查。
+
+V4.1.8
+20231109
+1.解决了binpkg包内存在pkgflx镜像时，FlashToolUI由于检测到了参数变化误报错而导致无法下载的问题。
+
+V4.1.7
+20231102
+1.更新参数时，如果之前配置了security参数，会导致hash校验和被打开，可能导致217启动时hash校验失败，修复并删除旧的配置数据段。
+
+V4.1.6
+20231102
+1.更新了718相关的配置，usb baseini 增加了line_0_snd_ass_com，baud 130000, assist_second_port_cmd=at+ecrst=delay,599
+
+V4.1.6
+20231101
+1.增加了extern_sec_head_used，使用外部secure head时，不进行hash校验
+2.增加了718芯片的第二辅助串口AT口来实现复位并重启进入USB下载模式，以此实现USB端口的免按键下载。
+
+
+V4.1.5
+20230911
+1.主版本号和之前发布的版本相同，都为4.1.4，无法从版本号上直接区分， FLASHLAYOUT这一重要变更，所以重新编译
+更新主版本号为V4.1.5.
+
+
+V4.1.4p02
+20230908
+1.更新了718P/S, 716S的MEMORY LAYOUT.
+
+V4.1.4p01
+20230825
+1.718S/P, 716S bootloader size从64KB到72KB, flashlayout更新后，相关的配置更新，demo image更新。
+
+V4.1.4
+20230823
+1.发布了 FlashToolCLI V4.1.4,支持716s项目
+
+V4.1.3
+20230717
+1.发布了 FlashToolCLI V4.1.3,支持718项目，支持多product统一配置导入，兼容历史项目618,616S,616,626。
+

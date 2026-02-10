@@ -1,0 +1,50 @@
+2023-07-04 15:59:47
+ImageInfo:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\ap_bootloader.bin
+SYNC TGT: D:\FlashTools_V4.1.4_20230704_test\pkgimg_gen\xpk_ff_ec718s_prd_images\ap_bootloader.bin
+2023-07-04 15:59:47
+ImageInfo:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\ap_at_command.bin
+SYNC TGT: D:\FlashTools_V4.1.4_20230704_test\pkgimg_gen\xpk_ff_ec718s_prd_images\ap_at_command.bin
+2023-07-04 15:59:47
+ImageInfo:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashTools_V4.1.4_20230704_test\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\cp-demo-flash.bin
+SYNC TGT: D:\FlashTools_V4.1.4_20230704_test\pkgimg_gen\xpk_ff_ec718s_prd_images\cp-demo-flash.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\XPK_FF_PrMgrCfg.json.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\XPK_FF_PrMgrCfg.json.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\xpk_ff_format_ec718s.json.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\xpk_ff_format_ec718s.json.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\config_xpk_ff_ec718s_prd_uart.baseini.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\config_xpk_ff_ec718s_prd_uart.baseini.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\config_xpk_ff_ec718s_prd_usb.baseini.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\config_xpk_ff_ec718s_prd_usb.baseini.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\ap_bootloader.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\ap_bootloader.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\ap_at_command.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\ap_at_command.bin
+2023-07-06 18:40:47
+ImageInfo:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\imagedata.json
+ExtractDir:D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp
+SYNC SRC: D:\FlashToolsCLI_V4.1.2_20230706\image_ec718\named_product\xpk_ff_ec718s\pkgdir\pkg_extract_tmp\cp-demo-flash.bin
+SYNC TGT: D:\FlashToolsCLI_V4.1.2_20230706\pkgimg_gen\xpk_ff_ec718s_prd_images\cp-demo-flash.bin
